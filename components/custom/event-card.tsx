@@ -12,7 +12,7 @@ import Link from "next/link"
 
 export const EventCard = ({ event }: { event: any }) => {
   return (
-    <div className="flex justify-start gap-0 flex-col md:flex-row w-[27rem] md:w-[60rem]">
+    <div className="flex justify-start gap-0 flex-col md:flex-row w-[24rem] md:w-[60rem]">
       <img src={event.image_url} alt="Event banner" className="h-[350px] md:h-[450px] w-[27rem] md:w-[350px]" />
       <Card className="bg-[#231942] ">
         <CardHeader>
@@ -31,13 +31,13 @@ export const EventCard = ({ event }: { event: any }) => {
         <CardFooter>
           {event.is_for_external_students ? <div className="w-full flex justify-start flex-col sm:flex-row items-center gap-3">
             <Link href={event.formLinkVIT} target="_blank">
-              <Button className="w-[25rem] md:w-auto">Register {"(VIT Students)"}</Button>
+              <Button className="w-[22rem] md:w-auto">Register {"(VIT Students)"}</Button>
             </Link>
             <Link href={event.formLinkExt} target="_blank">
-              <Button className="w-[25rem] md:w-auto">Register{" (External Students)"}</Button>
+              <Button className="w-[22rem] md:w-auto">Register{" (External Students)"}</Button>
             </Link>
           </div> : <Link href={event.formLinkVIT} target="_blank">
-            <Button className="w-[25rem] md:w-auto">Regsiter {"(VIT Students)"}</Button></Link>}
+            <Button className="w-[22rem] md:w-auto">Regsiter {"(VIT Students)"}</Button></Link>}
         </CardFooter>
       </Card>
     </div>
