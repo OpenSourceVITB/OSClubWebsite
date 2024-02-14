@@ -16,10 +16,15 @@ export const Navbar = () => {
         </div>
       </Link>
       <div className="flex justify-between items-center gap-2">
+        <Link href={"/"}>
+          <Button variant={"ghost"} className="rounded-full hover:bg-purple-950">Home</Button>
+        </Link>
         <Link href={"/events"}>
           <Button variant={"ghost"} className="rounded-full hover:bg-purple-950">Events</Button>
         </Link>
-        <Button className="rounded-full hover:bg-purple-950" variant={"ghost"}>Github</Button>
+        <Link href={"https://github.com/OpenSourceVITB"} target="_blank">
+          <Button className="rounded-full hover:bg-purple-950" variant={"ghost"}>Github</Button>
+        </Link>
       </div>
     </div>
   )
