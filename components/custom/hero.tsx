@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <div className="py-4 mt-12 h-[87vh] w-full flex flex-col justify-start items-start">
+    <div className="py-4 mt-12 h-[30vh] w-full flex flex-col justify-start items-start">
       <div className="w-full mx-auto flex flex-col sm:flex-row justify-center items-center sm:gap-4">
         <ClippedText content="Learn" />
         <ClippedText content="Collaborate" />
